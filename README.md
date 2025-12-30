@@ -108,6 +108,26 @@ curl http://localhost:8080/<YOUR_KEY>/Hello%20World
 2.  Add a server: `http://<YOUR_PC_IP>:8080`.
 3.  Copy the generated **Device Key**.
 
+## 🏠 Home Lab: Unraid Integration
+
+A key use case for this server is centralizing notifications for your **Unraid** home lab.
+
+### Setup in Unraid
+1.  Go to **Settings** > **Notifications** on your Unraid WebGUI.
+2.  Find the **Bark** section.
+3.  Set **Agent function** to `Enabled`.
+4.  Set **Pushurl** to your local server:
+    ```
+    http://<YOUR_SERVER_IP>:8080/<DEVICE_KEY>
+    ```
+    *(e.g., http://192.168.1.112:8080/bae3ca6330c547c797f13d231e6040f8)*
+5.  **Apply** and click **Test**.
+
+### Why use this version with Unraid?
+-   **Structured POST Support**: This Python implementation explicitly handles the complex POST requests Unraid sends, extracting the `title`, `body`, and `importance` correctly.
+-   **Local Audit Trail**: Every Unraid system alert is logged into your local `log.log` and `bark.db`.
+-   **Privacy**: Notifications transit through your local network before final delivery to Apple, keeping logs off third-party cloud servers.
+
 ## Project Structure
 
 -   `python_server/`: Source code.
