@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  bark-server:
+    build: .
+    container_name: bark-python-server
+    ports:
+      - "8080:8080"
+      - "8501:8501"
+    volumes:
+      - .:/app
+      - bark_data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+
+volumes:
+  bark_data:

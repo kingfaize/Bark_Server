@@ -1,0 +1,163 @@
+2025-12-30 15:45:35,014 - INFO - Bark Server starting up...
+2025-12-30 15:45:35,016 - INFO - Bark Server shutting down...
+2025-12-30 15:46:57,565 - INFO - Bark Server starting up...
+2025-12-30 15:46:57,567 - INFO - Bark Server shutting down...
+2025-12-30 15:47:11,817 - INFO - Bark Server starting up...
+2025-12-30 15:47:11,819 - INFO - Bark Server shutting down...
+2025-12-30 15:47:42,310 - INFO - Bark Server starting up...
+2025-12-30 15:47:42,312 - INFO - Bark Server shutting down...
+2025-12-30 15:50:03,132 - INFO - Bark Server starting up...
+2025-12-30 15:50:03,135 - INFO - Database initialized successfully.
+2025-12-30 15:50:03,135 - INFO - Bark Server shutting down...
+2025-12-30 15:50:04,693 - INFO - Bark Server starting up...
+2025-12-30 15:50:04,695 - INFO - Database initialized successfully.
+2025-12-30 15:50:04,696 - INFO - Bark Server shutting down...
+2025-12-30 15:53:20,806 - INFO - Started server process [21000]
+2025-12-30 15:53:20,806 - INFO - Started server process [21000]
+2025-12-30 15:53:20,806 - INFO - Waiting for application startup.
+2025-12-30 15:53:20,806 - INFO - Waiting for application startup.
+2025-12-30 15:53:20,807 - INFO - Bark Server starting up...
+2025-12-30 15:53:20,809 - INFO - Database initialized successfully.
+2025-12-30 15:53:20,809 - INFO - Application startup complete.
+2025-12-30 15:53:20,809 - INFO - Application startup complete.
+2025-12-30 15:53:20,809 - ERROR - [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8080): only one usage of each socket address (protocol/network address/port) is normally permitted
+2025-12-30 15:53:20,809 - ERROR - [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8080): only one usage of each socket address (protocol/network address/port) is normally permitted
+2025-12-30 15:53:20,810 - INFO - Waiting for application shutdown.
+2025-12-30 15:53:20,810 - INFO - Waiting for application shutdown.
+2025-12-30 15:53:20,810 - INFO - Bark Server shutting down...
+2025-12-30 15:53:20,810 - INFO - Application shutdown complete.
+2025-12-30 15:53:20,810 - INFO - Application shutdown complete.
+2025-12-30 15:54:20,581 - INFO - Started server process [29916]
+2025-12-30 15:54:20,581 - INFO - Started server process [29916]
+2025-12-30 15:54:20,582 - INFO - Waiting for application startup.
+2025-12-30 15:54:20,582 - INFO - Waiting for application startup.
+2025-12-30 15:54:20,583 - INFO - Bark Server starting up...
+2025-12-30 15:54:20,584 - INFO - Database initialized successfully.
+2025-12-30 15:54:20,584 - INFO - Application startup complete.
+2025-12-30 15:54:20,584 - INFO - Application startup complete.
+2025-12-30 15:54:20,585 - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2025-12-30 15:54:20,585 - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2025-12-30 15:54:35,428 - INFO - Push SUCCESS | Key: bae3ca6330c547c797f13d231e6040f8 | Title: Bark | Body: good
+
+2025-12-30 15:54:35,438 - INFO - GET /bae3ca6330c547c797f13d231e6040f8/Bark/good - Status: 200 - Duration: 0.8318s
+2025-12-30 15:54:35,438 - INFO - 127.0.0.1:59932 - "GET /bae3ca6330c547c797f13d231e6040f8/Bark/good%0A HTTP/1.1" 200
+2025-12-30 15:54:36,012 - INFO - Push SUCCESS | Key: bae3ca6330c547c797f13d231e6040f8 | Title: Bark | Body: good
+
+2025-12-30 15:54:36,020 - INFO - GET /bae3ca6330c547c797f13d231e6040f8/Bark/good - Status: 200 - Duration: 0.2320s
+2025-12-30 15:54:36,020 - INFO - 127.0.0.1:59935 - "GET /bae3ca6330c547c797f13d231e6040f8/Bark/good%0A HTTP/1.1" 200
+2025-12-30 16:34:29,112 - INFO - GET / - Status: 404 - Duration: 0.0000s
+2025-12-30 16:34:29,112 - INFO - 192.168.1.112:62362 - "GET / HTTP/1.1" 404
+2025-12-30 16:34:29,224 - INFO - GET /favicon.ico - Status: 404 - Duration: 0.0010s
+2025-12-30 16:34:29,224 - INFO - 192.168.1.112:62362 - "GET /favicon.ico HTTP/1.1" 404
+2025-12-30 16:34:59,859 - INFO - Started server process [28368]
+2025-12-30 16:34:59,859 - INFO - Started server process [28368]
+2025-12-30 16:34:59,860 - INFO - Waiting for application startup.
+2025-12-30 16:34:59,860 - INFO - Waiting for application startup.
+2025-12-30 16:34:59,860 - INFO - Bark Server starting up...
+2025-12-30 16:34:59,864 - INFO - Database initialized successfully.
+2025-12-30 16:34:59,864 - INFO - Application startup complete.
+2025-12-30 16:34:59,864 - INFO - Application startup complete.
+2025-12-30 16:34:59,864 - ERROR - [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8080): only one usage of each socket address (protocol/network address/port) is normally permitted
+2025-12-30 16:34:59,864 - ERROR - [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8080): only one usage of each socket address (protocol/network address/port) is normally permitted
+2025-12-30 16:34:59,865 - INFO - Waiting for application shutdown.
+2025-12-30 16:34:59,865 - INFO - Waiting for application shutdown.
+2025-12-30 16:34:59,865 - INFO - Bark Server shutting down...
+2025-12-30 16:34:59,865 - INFO - Application shutdown complete.
+2025-12-30 16:34:59,865 - INFO - Application shutdown complete.
+2025-12-30 16:35:07,719 - INFO - Shutting down
+2025-12-30 16:35:07,719 - INFO - Shutting down
+2025-12-30 16:35:07,826 - INFO - Waiting for application shutdown.
+2025-12-30 16:35:07,826 - INFO - Waiting for application shutdown.
+2025-12-30 16:35:07,827 - INFO - Bark Server shutting down...
+2025-12-30 16:35:07,827 - INFO - Application shutdown complete.
+2025-12-30 16:35:07,827 - INFO - Application shutdown complete.
+2025-12-30 16:35:07,827 - INFO - Finished server process [29916]
+2025-12-30 16:35:07,827 - INFO - Finished server process [29916]
+2025-12-30 16:35:25,043 - INFO - Started server process [2192]
+2025-12-30 16:35:25,043 - INFO - Started server process [2192]
+2025-12-30 16:35:25,044 - INFO - Waiting for application startup.
+2025-12-30 16:35:25,044 - INFO - Waiting for application startup.
+2025-12-30 16:35:25,044 - INFO - Bark Server starting up...
+2025-12-30 16:35:25,045 - INFO - Database initialized successfully.
+2025-12-30 16:35:25,046 - INFO - Application startup complete.
+2025-12-30 16:35:25,046 - INFO - Application startup complete.
+2025-12-30 16:35:25,046 - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2025-12-30 16:35:25,046 - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2025-12-30 16:45:48,459 - INFO - POST /bae3ca6330c547c797f13d231e6040f8 - Status: 404 - Duration: 0.0000s
+2025-12-30 16:45:48,460 - INFO - 192.168.1.185:33772 - "POST /bae3ca6330c547c797f13d231e6040f8 HTTP/1.1" 404
+2025-12-30 16:45:58,118 - INFO - POST /bae3ca6330c547c797f13d231e6040f8 - Status: 404 - Duration: 0.0000s
+2025-12-30 16:45:58,119 - INFO - 192.168.1.185:58420 - "POST /bae3ca6330c547c797f13d231e6040f8 HTTP/1.1" 404
+2025-12-30 16:46:31,836 - INFO - Push SUCCESS | Key: bae3ca6330c547c797f13d231e6040f8 | Title: Bark | Body: hello
+2025-12-30 16:46:31,847 - INFO - GET /bae3ca6330c547c797f13d231e6040f8/Bark/hello - Status: 200 - Duration: 0.9772s
+2025-12-30 16:46:31,848 - INFO - 127.0.0.1:64911 - "GET /bae3ca6330c547c797f13d231e6040f8/Bark/hello HTTP/1.1" 200
+2025-12-30 16:48:56,423 - INFO - POST /bae3ca6330c547c797f13d231e6040f8 - Status: 404 - Duration: 0.0000s
+2025-12-30 16:48:56,424 - INFO - 192.168.1.185:44218 - "POST /bae3ca6330c547c797f13d231e6040f8 HTTP/1.1" 404
+2025-12-30 16:49:07,780 - INFO - Started server process [25792]
+2025-12-30 16:49:07,780 - INFO - Started server process [25792]
+2025-12-30 16:49:07,781 - INFO - Waiting for application startup.
+2025-12-30 16:49:07,781 - INFO - Waiting for application startup.
+2025-12-30 16:49:07,781 - INFO - Bark Server starting up...
+2025-12-30 16:49:07,786 - INFO - Database initialized successfully.
+2025-12-30 16:49:07,786 - INFO - Application startup complete.
+2025-12-30 16:49:07,786 - INFO - Application startup complete.
+2025-12-30 16:49:07,787 - ERROR - [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8080): only one usage of each socket address (protocol/network address/port) is normally permitted
+2025-12-30 16:49:07,787 - ERROR - [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8080): only one usage of each socket address (protocol/network address/port) is normally permitted
+2025-12-30 16:49:07,789 - INFO - Waiting for application shutdown.
+2025-12-30 16:49:07,789 - INFO - Waiting for application shutdown.
+2025-12-30 16:49:07,789 - INFO - Bark Server shutting down...
+2025-12-30 16:49:07,789 - INFO - Application shutdown complete.
+2025-12-30 16:49:07,789 - INFO - Application shutdown complete.
+2025-12-30 16:49:13,938 - INFO - Started server process [28688]
+2025-12-30 16:49:13,938 - INFO - Started server process [28688]
+2025-12-30 16:49:13,938 - INFO - Waiting for application startup.
+2025-12-30 16:49:13,938 - INFO - Waiting for application startup.
+2025-12-30 16:49:13,939 - INFO - Bark Server starting up...
+2025-12-30 16:49:13,940 - INFO - Database initialized successfully.
+2025-12-30 16:49:13,940 - INFO - Application startup complete.
+2025-12-30 16:49:13,940 - INFO - Application startup complete.
+2025-12-30 16:49:13,941 - ERROR - [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8080): only one usage of each socket address (protocol/network address/port) is normally permitted
+2025-12-30 16:49:13,941 - ERROR - [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8080): only one usage of each socket address (protocol/network address/port) is normally permitted
+2025-12-30 16:49:13,941 - INFO - Waiting for application shutdown.
+2025-12-30 16:49:13,941 - INFO - Waiting for application shutdown.
+2025-12-30 16:49:13,941 - INFO - Bark Server shutting down...
+2025-12-30 16:49:13,941 - INFO - Application shutdown complete.
+2025-12-30 16:49:13,941 - INFO - Application shutdown complete.
+2025-12-30 16:49:18,870 - INFO - Shutting down
+2025-12-30 16:49:18,870 - INFO - Shutting down
+2025-12-30 16:49:18,978 - INFO - Waiting for application shutdown.
+2025-12-30 16:49:18,978 - INFO - Waiting for application shutdown.
+2025-12-30 16:49:18,978 - INFO - Bark Server shutting down...
+2025-12-30 16:49:18,978 - INFO - Application shutdown complete.
+2025-12-30 16:49:18,978 - INFO - Application shutdown complete.
+2025-12-30 16:49:18,978 - INFO - Finished server process [2192]
+2025-12-30 16:49:18,978 - INFO - Finished server process [2192]
+2025-12-30 16:49:29,394 - INFO - Started server process [26756]
+2025-12-30 16:49:29,394 - INFO - Started server process [26756]
+2025-12-30 16:49:29,394 - INFO - Waiting for application startup.
+2025-12-30 16:49:29,394 - INFO - Waiting for application startup.
+2025-12-30 16:49:29,394 - INFO - Bark Server starting up...
+2025-12-30 16:49:29,396 - INFO - Database initialized successfully.
+2025-12-30 16:49:29,396 - INFO - Application startup complete.
+2025-12-30 16:49:29,396 - INFO - Application startup complete.
+2025-12-30 16:49:29,397 - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2025-12-30 16:49:29,397 - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2025-12-30 16:50:20,335 - INFO - Push SUCCESS | Key: bae3ca6330c547c797f13d231e6040f8 | Title: Bark test. | Body: Bark test.
+2025-12-30 16:50:20,347 - INFO - POST /bae3ca6330c547c797f13d231e6040f8 - Status: 200 - Duration: 0.7772s
+2025-12-30 16:50:20,348 - INFO - 192.168.1.185:46312 - "POST /bae3ca6330c547c797f13d231e6040f8 HTTP/1.1" 200
+2025-12-30 16:50:42,443 - INFO - GET /ping - Status: 200 - Duration: 0.0010s
+2025-12-30 16:50:42,443 - INFO - 192.168.1.166:57074 - "GET /ping HTTP/1.1" 200
+2025-12-30 16:51:07,956 - INFO - Push SUCCESS | Key: bae3ca6330c547c797f13d231e6040f8 | Title: Bark | Body: test final
+2025-12-30 16:51:07,966 - INFO - GET /bae3ca6330c547c797f13d231e6040f8/Bark/test final - Status: 200 - Duration: 0.7844s
+2025-12-30 16:51:07,967 - INFO - 127.0.0.1:62303 - "GET /bae3ca6330c547c797f13d231e6040f8/Bark/test%20final HTTP/1.1" 200
+2025-12-30 16:51:59,250 - INFO - Push SUCCESS | Key: bae3ca6330c547c797f13d231e6040f8 | Title: Bark test. | Body: Bark test.
+2025-12-30 16:51:59,260 - INFO - POST /bae3ca6330c547c797f13d231e6040f8 - Status: 200 - Duration: 0.7821s
+2025-12-30 16:51:59,260 - INFO - 192.168.1.185:48510 - "POST /bae3ca6330c547c797f13d231e6040f8 HTTP/1.1" 200
+2025-12-30 16:54:02,530 - INFO - Shutting down
+2025-12-30 16:54:02,530 - INFO - Shutting down
+2025-12-30 16:54:02,639 - INFO - Waiting for application shutdown.
+2025-12-30 16:54:02,639 - INFO - Waiting for application shutdown.
+2025-12-30 16:54:02,639 - INFO - Bark Server shutting down...
+2025-12-30 16:54:02,639 - INFO - Application shutdown complete.
+2025-12-30 16:54:02,639 - INFO - Application shutdown complete.
+2025-12-30 16:54:02,639 - INFO - Finished server process [26756]
+2025-12-30 16:54:02,639 - INFO - Finished server process [26756]

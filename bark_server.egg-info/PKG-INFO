@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: bark-server
+Version: 1.0.0
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: sqlalchemy
+Requires-Dist: httpx[http2]
+Requires-Dist: pyjwt
+Requires-Dist: cryptography
+Requires-Dist: python-dotenv
+Dynamic: license-file
+Dynamic: requires-dist

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+bark_client.egg-info/PKG-INFO
+bark_client.egg-info/SOURCES.txt
+bark_client.egg-info/dependency_links.txt
+bark_client.egg-info/requires.txt
+bark_client.egg-info/top_level.txt

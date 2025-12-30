@@ -1,0 +1,8 @@
+requests
+fastapi
+uvicorn
+sqlalchemy
+httpx[http2]
+pyjwt
+cryptography
+python-dotenv

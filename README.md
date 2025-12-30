@@ -1,72 +1,119 @@
-# Bark
+# Bark Server (Python)
 
-<img src="https://wx3.sinaimg.cn/mw690/0060lm7Tly1g0nfnjjxbbj30sg0sg757.jpg" width=200px height=200px />
+A pure Python implementation of the [Bark](https://github.com/Finb/Bark) backend server, built with **FastAPI**.
 
-[Bark](https://github.com/Finb/Bark) is an iOS App which allows you to push customed notifications to your iPhone.
+## Features
+
+-   **Lightweight**: Built on FastAPI and Uvicorn.
+-   **Database**: Uses SQLite (`bark.db`) for easy local setup.
+-   **Async**: Fully asynchronous push dispatch using `httpx` (HTTP/2).
+-   **Helper Scripts**: Includes tools to easily send notifications from the command line.
+
+---
+
+## 🚀 Quick Start (Production)
+
+1.  **Install**: `pip install -e .`
+2.  **Configure**: Update `.env` with your `BARK_DEVICE_KEY`.
+3.  **Launch**: `streamlit run streamlit_app.py`
+4.  **Notify**: Use the dashboard to send your first message!
+
+## Dashboard (Streamlit)
+
+The server includes a web-based dashboard for easy management.
+
+### Running the Dashboard
+1. Activate your virtual environment:
+   ```powershell
+   .\venv\Scripts\activate
+   ```
+2. Start the dashboard:
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+3. Open `http://localhost:8501` in your browser.
+
+### Dashboard Features
+- **Server Control**: Start/Stop the FastAPI server with a single click.
+- **Send Push**: Test notifications directly from the UI without using `curl`.
+- **Message History**: View a table of recent push notifications.
+- **Raw Logs**: Interactive view of the system `log.log` file.
+
+## Verbose Logging
+
+All server events are logged verbosely to `log.log` in the project root. This includes:
+- Startup/Shutdown events.
+- Incoming HTTP requests and status codes.
+- Push notification results and APNs feedback.
+- Detailed message content (Title, Body).
+
+## Prerequisites
+
+-   Python 3.8+
+-   A `.p8` Authentication Key from Apple (placed in `python_server/`).
 
 ## Installation
 
-### For Docker User
+1.  **Create a Virtual Environment** (Recommended):
+    ```bash
+    python -m venv venv
+    ./venv/scripts/activate  # Windows
+    # source venv/bin/activate  # Linux/Mac
+    ```
 
-![Docker Automated build](https://img.shields.io/docker/automated/finab/bark-server.svg) ![Image Size](https://img.shields.io/docker/image-size/finab/bark-server?sort=date) ![License](https://img.shields.io/github/license/finb/bark-server)
+2.  **Install the Project**:
+    This will install the server and all dependencies (FastAPI, Uvicorn, etc.).
+    ```bash
+    pip install -e .
+    ```
 
-The docker image is already available, you can use the following command to run the bark server:
+## running the Server
 
-``` sh
-docker run -dt --name bark -p 8080:8080 -v `pwd`/bark-data:/data finab/bark-server
+Start the server using Uvicorn:
+
+```bash
+uvicorn python_server.main:app --host 0.0.0.0 --port 8080
 ```
 
-You can also use the GitHub Container Registry image:
+The server will be available at `http://localhost:8080`.
 
-``` sh
-docker run -dt --name bark -p 8080:8080 -v `pwd`/bark-data:/data ghcr.io/finb/bark-server
+## Configuration (Optional)
+
+You can use a `.env` file to store your credentials for the helper scripts.
+
+Create a `.env` file in the root directory:
+```env
+BARK_SERVER_URL=http://localhost:8080
+BARK_DEVICE_KEY=your_device_key_from_the_app
 ```
 
-If you use the docker-compose tool, you can copy docker-copose.yaml under this project to any directory and run it:
+## Usage
 
-``` sh
-mkdir bark-server && cd bark-server
-curl -sL https://github.com/Finb/bark-server/raw/master/deploy/docker-compose.yaml > docker-compose.yaml
-docker compose up -d
+### 1. Using the Helper Script (Easiest)
+If you have configured your `.env` file, you can send notifications instantly:
+
+```bash
+python send_message.py "Hello form Python!"
 ```
 
-### For General User 
+### 2. Using CURL
+You can also send requests directly:
 
-- 1、Download precompiled binaries from the [releases](https://github.com/Finb/bark-server/releases) page
-- 2、Add executable permissions to the bark-server binary: `chmod +x bark-server`
-- 3、Start bark-server: `./bark-server --addr 0.0.0.0:8080 --data ./bark-data`
-- 4、Test the server: `curl localhost:8080/ping`
-
-**Note: Bark-server uses the `/data` directory to store data by default. Make sure that bark-server has permission to write to the `/data` directory, otherwise use the `-d` option to change the directory.**
-
-### For Developer
-
-Developers can compile this project by themselves, and the dependencies required for compilation:
-
-- Golang 1.18+
-- Go Mod Enabled(env `GO111MODULE=on`)
-- Go Mod Proxy Enabled(env `GOPROXY=https://goproxy.cn`)
-- [go-task](https://taskfile.dev/installation/) Installed
-
-Run the following command to compile this project:
-
-```sh
-# Cross compile all platforms
-task
-
-# Compile the specified platform (please refer to Taskfile.yaml)
-task linux_amd64
-task linux_amd64_v3
+```bash
+curl http://localhost:8080/<YOUR_KEY>/Hello%20World
 ```
 
-**Note: The linux amd64 v3 architecture was added in go 1.18, see [https://github.com/golang/go/wiki/MinimumRequirements#amd64](https://github.com/golang/go/wiki/MinimumRequirements#amd64)**
+### 3. iPhone Setup
+1.  Download the **Bark** app.
+2.  Add a server: `http://<YOUR_PC_IP>:8080`.
+3.  Copy the generated **Device Key**.
 
-### Use MySQL instead of Bbolt
+## Project Structure
 
-Just run the server with `-dsn=user:pass@tcp(mysql_host)/bark`, it will use MySQL instead of file database Bbolt
-
-## Others
-
-* [API_V2.md](docs/API_V2.md).
-* [MCP.md](docs/MCP.md).
-
+-   `python_server/`: Source code.
+    -   `main.py`: API Endpoints.
+    -   `apns.py`: Apple Push Notification logic.
+    -   `database.py`: SQLite models.
+    -   `config.py`: Server settings.
+-   `setup.py`: Packaging and dependency management.
+-   `send_message.py`: CLI script for sending notifications.
