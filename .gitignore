@@ -17,4 +17,4 @@ dist
 .vscode/
 .env
 venv/
-
+log.log
